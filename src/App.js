@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Dashboard from './components/Dashboard';
 import GetEmployee from './getApi/GetEmployee';
 import Login from './components/Login';

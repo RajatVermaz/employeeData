@@ -9,6 +9,7 @@ const Setting = () => {
       .then((res) => res.json())
       .then((res) => setUsers(res));
   }, []);
+
   return (
     <>
       <div className="container-fluid">
@@ -20,8 +21,9 @@ const Setting = () => {
               {`
                 Login:- ${user.login}
                
-                Avatar-URL:- ${user.avatar_url}`}
+                `}
             </pre>
+            <img src={user.avatar_url} />
           </div>
         ))}
       </div>
