@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import GetEmployee from './GetEmployee';
-import Login from './Login';
+import GetEmployee from '../getApi/GetEmployee';
+
+import Setting from './Setting';
 
 const Dashboard = () => {
   const [active, setActive] = useState('GetEmployee');
@@ -26,7 +27,7 @@ const Dashboard = () => {
         </nav>
         <div>
           {active === 'GetEmployee' && <GetEmployee />}
-          {active === 'login' && <Login />}
+          {active === 'login' && <Setting />}
         </div>
       </div>
     </>
